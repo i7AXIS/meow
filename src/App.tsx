@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import loadingGif from '@/assets/images/meow_loading.gif'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { Header } from './components/Header'
 
@@ -43,7 +44,7 @@ function App() {
         <div className='flex justify-center items-center'>
           {isLoading ? (
             <img
-              src='/meow_loading.gif'
+              src={loadingGif}
               alt=''
               width={200}
               height={200}
